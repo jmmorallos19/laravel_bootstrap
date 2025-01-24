@@ -1,0 +1,59 @@
+:root{
+    --main-color: #193c71;
+}
+
+/* Default style for the nav-link */
+.nav-tabs .nav-link {
+    color: white;
+    background-color: #193c71;
+    border: none;
+    border-radius: 0;
+
+}
+
+/* Hover effect */
+.nav-tabs .nav-link:hover {
+    background-color: white;
+    color: #193c71;
+}
+
+/* Active tab style */
+.nav-tabs .nav-link.active {
+    background-color: white;
+    color: #193c71;
+}
+
+/* Optionally: Remove bottom border on active to create a seamless look */
+.nav-tabs .nav-link.active {
+    border-bottom: 4px solid #193c71;
+}
+
+.button-2 {
+    background-position: 100%;
+    background-color: #193c71;
+    color: #fff;
+    border: 2px solid #193c71;
+    border-radius: 5px;
+    font-size: .9rem;
+  }
+
+.button-2:hover {
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+  color: #193c71;
+  background: transparent;
+  border: 2px solid #193c71;
+}
+
+.table-container{
+    height: 760px;
+}
+
+.card-header h3{
+    color: var(--main-color);
+}
+
+.card-body{
+    height: inherit;
+    overflow: auto;
+}

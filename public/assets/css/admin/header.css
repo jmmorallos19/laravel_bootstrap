@@ -1,0 +1,53 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 1rem 1rem;
+}
+
+/* Notification */
+.custom-dropdown-center {
+    left: 50%; /* Aligns the left edge to the center of the button */
+    transform: translateX(-50%); /* Shifts it left by half its width */
+    width: 25vw; /* Optional: set the width */
+    max-height: 50vh;
+    overflow-y: scroll;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 1rem 1rem;
+}
+
+
+.custom-dropdown-center {
+    left: 50%; /* Aligns the left edge to the center of the button */
+    transform: translateX(-50%); /* Shifts it left by half its width */
+    width: 25vw; /* Optional: set the width */
+    max-height: 50vh;
+    overflow-y: scroll;
+}
+
+
+.title {
+    margin-right: 20px;
+}
+
+.title > div h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+#toggle_burger{
+    width: 20px;
+}
+
+.title p {
+    font-size: 1rem;
+    color: #555;
+}
+

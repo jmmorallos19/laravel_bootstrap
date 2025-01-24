@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --primary-color: #193c71;
+    --secondary-color: #fff;
+    --third-color: #E9F0FA;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar for webkit browsers */
+}
+
+h1 {
+    font-weight: 800;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#sidebar {
+    max-height: 100vdh;
+    height: 100dvh;
+    max-width: 264px;
+    min-width: 264px;
+    transition: all 0.35s ease-in-out;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    color: var(--secondary-color);
+}
+
+#sidebar.collapsed {
+    margin-left: -264px;
+}
+
+.toggler-btn {
+    background-color: transparent;
+    cursor: pointer;
+    border: 0;
+}
+
+.toggler-btn i {
+    font-size: 1.50rem;
+    color: #000;
+    font-weight: 1000;
+}
+
+.navbar{
+    width: 100%;
+    padding: 0;
+    -webkit-box-shadow: -1px 7px 21px -16px rgba(124, 124, 126, 1);
+    -moz-box-shadow: -1px 7px 21px -16px rgba(124, 124, 126, 1);
+    box-shadow: -1px 7px 21px -16px rgba(124, 124, 126, 1);
+}
+
+.sidebar-nav {
+    flex: 1 1 auto;
+}
+
+.sidebar-logo {
+    padding: 1.15rem 1.5rem;
+}
+
+.sidebar-logo img {
+    width: 60px;
+    border-radius: 50%;
+    border: 2px solid var(--primary-color);
+}
+
+.sidebar-header {
+    color: #FFF;
+    font-size: .75rem;
+    padding: 1.5rem 1.5rem .375rem;
+}
+
+a.sidebar-link {
+    padding: .625rem 1.625rem;
+    color: #FFF;
+    position: relative;
+    transition: all 0.35s;
+    display: block;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+a.sidebar-link:hover {
+    background-color: #f9f6f630;
+}
+
+a.sidebar-link.active{
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.sidebar-link[data-bs-toggle="collapse"]::after {
+    border: solid;
+    border-width: 0 .075rem .075rem 0;
+    content: "";
+    display: inline-block;
+    padding: 2px;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.4rem;
+    transform: rotate(-135deg);
+    transition: all .2s ease-out;
+}
+
+.sidebar-link[data-bs-toggle="collapse"].collapsed::after {
+    transform: rotate(45deg);
+    transition: all .2s ease-out;
+}
+
+.sidebar-dropdown li a{
+    font-size: .9rem;
+}
+
+/* Screen size less than 768px */
+
+@media (max-width:768px) {
+
+    .sidebar-toggle {
+        margin-left: -264px;
+    }
+
+    #sidebar.collapsed {
+        margin-left: 0;
+    }
+}
